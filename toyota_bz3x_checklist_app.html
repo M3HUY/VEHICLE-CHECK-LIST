@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOYOTA bZ3X Inspection Checklist</title>
+    <style>
+        body { font-family: 'Khmer OS Battambang', -apple-system, BlinkMacSystemFont, sans-serif; padding: 15px; background: #f8f9fa; color: #212529; line-height: 1.6; }
+        h1 { font-size: 1.2rem; color: #d9534f; text-align: center; margin-bottom: 20px; font-weight: bold; }
+        h2 { font-size: 1.05rem; color: #0275d8; border-bottom: 2px solid #0275d8; padding-bottom: 5px; margin-top: 25px; }
+        .item { display: flex; align-items: flex-start; margin: 12px 0; background: #ffffff; padding: 12px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        input[type="checkbox"] { width: 24px; height: 24px; margin-right: 12px; margin-top: 2px; flex-shrink: 0; cursor: pointer; }
+        label { font-size: 0.95rem; cursor: pointer; width: 100%; }
+        .sub-item { margin-left: 20px; }
+        .progress-bar { position: sticky; top: 0; background: #212529; color: white; padding: 10px; text-align: center; border-radius: 6px; margin-bottom: 15px; font-weight: bold; }
+        .highlight { background-color: #fff3cd; border-left: 4px solid #ffc107; }
+    </style>
+</head>
+<body>
+
+    <div class="progress-bar" id="progress">Checked: 0 / 41 Items</div>
+
+    <h1>លិខិតផ្ទៀងផ្ទាត់រថយន្ត TOYOTA bZ3X (610km MAX) INSPECTION CHECKLIST</h1>
+
+    <h2>ផ្នែកទី ១៖ ការផ្ទៀងផ្ទាត់ជម្រើស 610km និងឯកសារ (610km Trim & Paperwork Verification)</h2>
+    <div class="item"><input type="checkbox" id="c1" onchange="updateProgress()"><label for="c1"><b>ផ្លាករោងចក្រត្រង់ទ្វារ (Door Jamb Factory Label):</b> ផ្លាកលោហៈបោះពុម្ពទំហំអាគុយ 67.92 kWh (LFP Battery) និងកម្លាំងម៉ូទ័រ 165 kW (២២៤ សេះ)។</label></div>
+    <div class="item"><input type="checkbox" id="c2" onchange="updateProgress()"><label for="c2"><b>ឯកសាររោងចក្រចិន / ក្រដាសពន្ធ (CCC Certificate):</b> លេខតួរថយន្ត (VIN) លើក្រដាសឯកសារ ត្រូវតែដូចគ្នានឹងលេខ VIN ដែលបោះពុម្ពលើតួរថយន្ត និងបាតកញ្ចក់មុខ ១០០%។</label></div>
+    <div class="item"><input type="checkbox" id="c3" onchange="updateProgress()"><label for="c3"><b>ចម្ងាយរត់លើអេក្រង់ 100%:</b> អេក្រង់ប៉ុងមុខបញ្ជាក់ចម្ងាយ ~610 km (CLTC) ពេលសាកអាគុយពេញ 100%។</label></div>
+    <div class="item"><input type="checkbox" id="c4" onchange="updateProgress()"><label for="c4"><b>ទំហំយ៉ាន់ និងសំបកកង់:</b> យ៉ាន់ស្ព័ររោងចក្រទំហំ 19 អ៊ីញ (សំបកកង់ 225/45 R19)។</label></div>
+    <div class="item"><input type="checkbox" id="c5" onchange="updateProgress()"><label for="c5"><b>ប្រព័ន្ធដំបូល និងទ្វារក្រោយ:</b> ដំបូលកញ្ចក់ Panoramic ជាមួយវាំងននបិទបើកអគ្គិសនី និងឃ្លុបក្រោយចុចបើកអគ្គិសនី (Power Tailgate)។</label></div>
+
+    <h2>ផ្នែកទី ២៖ ប្រព័ន្ធជើងក្រោម បូម និងម៉ូទ័រ (Undercarriage & Suspension)</h2>
+    <div class="item"><input type="checkbox" id="c6" onchange="updateProgress()"><label for="c6"><b>ប្រអប់ការពារអាគុយក្រោមបាត (LFP Battery Tray):</b> បាតលោហៈស្មើជើងល្អ គ្មានស្នាមក្រពិត ធ្លុះ ឬកោសរលាត់ជម្រៅធ្ងន់ធ្ងរឡើយ។</label></div>
+    <div class="item"><input type="checkbox" id="c7" onchange="updateProgress()"><label for="c7"><b>បូមមុខសងខាង:</b> បូម MacPherson ស្ងួតល្អ គ្មានជ្រាបប្រេង ឬរហែកកៅស៊ូការពារដី។</label></div>
+    <div class="item"><input type="checkbox" id="c8" onchange="updateProgress()"><label for="c8"><b>ប៊ូស និងរ៉ូទុយអាមឡាន (Control Arm Bushings):</b> កៅស៊ូប៊ូសគ្មានស្នាមប្រេះ រហែក ហើយរ៉ូទុយក្រោមគ្មានការរលុងពេលគាស់ស្រាលៗ។</label></div>
+    <div class="item"><input type="checkbox" id="c9" onchange="updateProgress()"><label for="c9"><b>ដើមឡាក់ និងប៊ូទុយចង្កូត (Sway Bar Links & Tie Rods):</b> ចាប់គ្រវីដោយដៃគ្មានចលនារលុង ឬលឺសំឡេង "កុកៗ" ឡើយ។</label></div>
+    <div class="item"><input type="checkbox" id="c10" onchange="updateProgress()"><label for="c10"><b>កៅស៊ូក្បាលឡាក់ម៉ូទ័រមុខ (Front CV Axle Boots):</b> កៅស៊ូក្របក្បាលឡាក់ជុំវិញម៉ូទ័រជិតល្អ គ្មានរហែកខ្ទាតខ្លាញ់ចេញមកក្រៅ។</label></div>
+    <div class="item"><input type="checkbox" id="c11" onchange="updateProgress()"><label for="c11"><b>ថាស និងស្បែកហ្វ្រាំង (Brake Rotors & Pads):</b> ផ្ទៃថាសហ្វ្រាំងរលោងល្អ ហើយស្បែកហ្វ្រាំងមានកម្រាស់យ៉ាងតិច ≥ ៥ ម.ម។</label></div>
+
+    <h2>ផ្នែកទី ៣៖ សុខភាពអាគុយ (SOH) និងប្រព័ន្ធសាកភ្លើង (Battery & Charging)</h2>
+    <div class="item"><input type="checkbox" id="c12" onchange="updateProgress()"><label for="c12"><b>ការស្កេន OBD2 (Live Diagnostic Scan):</b> ទិន្នន័យ BMS បង្ហាញសុខភាពអាគុយ (State of Health - SOH) ≥ ៩០% - ៩៥%។</label></div>
+    <div class="item"><input type="checkbox" id="c13" onchange="updateProgress()"><label for="c13"><b>តុល្យភាព Cell អាគុយ:</b> កម្រិតភ្លើង (Voltage) តាម Cell នីមួយៗរត់ស្មើដៃល្អ គ្មាន Cell ណាធ្លាក់ចុះខុសប្រក្រតី។</label></div>
+    <div class="item"><input type="checkbox" id="c14" onchange="updateProgress()"><label for="c14"><b>តេស្តបើកបរទម្លាក់ភាគរយ:</b> បើករយៈប្រមាណ ៣០-៥០ គ.ម ភាគរយអាគុយធ្លាក់ចុះស្មើដៃ គ្មានការស្រុតភាគរយភ្លាមៗ (ឧ. ធ្លាក់ពី ៤០% មក ២៥% ភ្លាមៗ)។</label></div>
+    <div class="item"><input type="checkbox" id="c15" onchange="updateProgress()"><label for="c15"><b>ប្រព័ន្ធសាកថាមពលត្រឡប់ (Regen Braking):</b> របារថាមពលរលកទៅ "Charge" ពេលដកជើងចេញពីហ្គែរ។</label></div>
+    <div class="item"><input type="checkbox" id="c16" onchange="updateProgress()"><label for="c16"><b>រន្ធសាកភ្លើងខាងក្រៅ:</b> រន្ធសាកយឺត (AC) និងសាកលឿន (DC) ស្អាត គ្មានស្នាមឆេះ ឬបាក់ជើងប៉ះឡើយ។</label></div>
+
+    <h2>ផ្នែកទី ៤៖ ប្រព័ន្ធ A/C និងអេក្រង់ ១៤.៦ អ៊ីញ (A/C & Infotainment)</h2>
+    <div class="item"><input type="checkbox" id="c17" onchange="updateProgress()"><label for="c17"><b>ល្បឿនចុះត្រជាក់ (A/C Cooling Speed):</b> បើកសីតុណ្ហភាព LO និងកង្ហារខ្លាំង ចេញខ្យល់ត្រជាក់ស្រអាប់ក្នុងរយៈពេល ១-២ នាទី។</label></div>
+    <div class="item"><input type="checkbox" id="c18" onchange="updateProgress()"><label for="c18"><b>ប្រព័ន្ធត្រជាក់សងខាង (Dual-Zone):</b> កំណត់សីតុណ្ហភាពដាច់ដោយឡែករវាងអ្នកបើកបរ និងអ្នករួមដំណើរធ្វើការត្រឹមត្រូវ។</label></div>
+    <div class="item"><input type="checkbox" id="c19" onchange="updateProgress()"><label for="c19"><b>កៅអីត្រជាក់ (Ventilated Seats):</b> កង្ហារបក់ខ្យល់ចេញតាមរន្ធកៅអីមុខទាំងពីរត្រជាក់ស្បែក។</label></div>
+    <div class="item"><input type="checkbox" id="c20" onchange="updateProgress()"><label for="c20"><b>ប្រតិកម្ម Touch អេក្រង់:</b> បន្ទះឈីប Snapdragon 8155 ឆ្លើយតបរហ័ស មិនទាក់ មិន Freeze ឬរលត់។</label></div>
+    <div class="item"><input type="checkbox" id="c21" onchange="updateProgress()"><label for="c21"><b>គុណភាពអេក្រង់:</b> គ្មានស្នាមអុចខ្មៅ/ស (Dead Pixels) ឬស្រពិចស្រពិលនៅគែមអេក្រង់ឡើយ។</label></div>
+    <div class="item"><input type="checkbox" id="c22" onchange="updateProgress()"><label for="c22"><b>ប្រព័ន្ធសំឡេង Yamaha 11-Speakers:</b> ច្រៀងច្បាស់ គ្មានបែកសំឡេង ឬញ័រប្រអប់បាស។</label></div>
+
+    <h2>ផ្នែកទី ៥៖ កាមេរ៉ា សេនស័រ និងប្រព័ន្ធសុវត្ថិភាព (Cameras & Sensors)</h2>
+    <div class="item"><input type="checkbox" id="c23" onchange="updateProgress()"><label for="c23"><b>កាមេរ៉ា ៣៦០ ឌឺក្រេ (360° Panoramic View):</b> កាមេរ៉ាទាំង ៤ បង្ហាញរូបភាពច្បាស់ HD រូបភាពតគ្នាសមសួន គ្មានស្នាមប្រេះ Lens។</label></div>
+    <div class="item"><input type="checkbox" id="c24" onchange="updateProgress()"><label for="c24"><b>មើលបាតឡាន (540° Transparent Chassis):</b> បង្ហាញរូបភាពផ្លូវក្រោមបាតឡានបានច្បាស់ពេលបើកបរយឺតៗ។</label></div>
+    <div class="item"><input type="checkbox" id="c25" onchange="updateProgress()"><label for="c25"><b>សេនស័រចូលចត (Ultrasonic Sensors):</b> សំឡេង "ប៊ីប" រ៉ោតញាប់ទៅៗ ពេលមានឧបសគ្គនៅជិត (~៣០ ស.ម លឺសំឡេងជាប់)។</label></div>
+    <div class="item"><input type="checkbox" id="c26" onchange="updateProgress()"><label for="c26"><b>Auto Hold & EPB:</b> ឡានទប់ស្ងៀមលើចំណោត និងលែងហ្វ្រាំងរលូនពេលជាន់ហ្គែរ។</label></div>
+
+    <h2>ផ្នែកទី ៦៖ ការផ្ទៀងផ្ទាត់ប្រព័ន្ធសូហ្វវែរ (Firmware Verification)</h2>
+    <div class="item"><input type="checkbox" id="c27" onchange="updateProgress()"><label for="c27"><b>ប្រភេទប្រព័ន្ធ (System Type):</b></label></div>
+    <div class="item sub-item"><input type="checkbox" id="c28" onchange="updateProgress()"><label for="c28"><b>ជម្រើស A (Original Factory OS):</b> ប្រព័ន្ធដើមរោងចក្រ (ចិន/អង់គ្លេស) ដើរស្ទាត់ ១០០% និងប្រើប្រាស់ជាមួយ Wireless Apple CarPlay / Android Auto USB Adapter។</label></div>
+    <div class="item sub-item"><input type="checkbox" id="c29" onchange="updateProgress()"><label for="c29"><b>ជម្រើស B (Modified Global OS):</b> Menu អង់គ្លេស ១០០% មាន Google Play Store។</label></div>
+    <div class="item"><input type="checkbox" id="c30" onchange="updateProgress()"><label for="c30"><b>លិខិតធានាសូហ្វវែរ:</b> ប្រសិនបើជា Modded OS ឃ្លាំងត្រូវតែមានលិខិតធានាចាក់សូហ្វវែរជូនវិញដោយឥតគិតថ្លៃ ករណីអេក្រង់មានបញ្ហា។</label></div>
+
+    <h2>ផ្នែកទី ៧៖ ការធ្វើតេស្តបើកបរ និងស្តាប់សំឡេង (Road Test Diagnostics)</h2>
+    <div class="item"><input type="checkbox" id="c31" onchange="updateProgress()"><label for="c31"><b>ផ្លូវរលាក់ (១៥-២៥ គ.ម/ម៉ោង):</b> គ្មានសំឡេង "គុកៗ" ឬ "កុកៗ" ចេញពីជើងក្រោម។</label></div>
+    <div class="item"><input type="checkbox" id="c32" onchange="updateProgress()"><label for="c32"><b>បត់ចង្កូតអស់ (U-Turn Test):</b> គ្មានសំឡេង "កិចៗ" ឬ "គ្រិចៗ" ពីក្បាលឡាក់ម៉ូទ័រពេលបត់ចង្កូតអស់។</label></div>
+    <div class="item"><input type="checkbox" id="c33" onchange="updateProgress()"><label for="c33"><b>ល្បឿនលឿន (៤០-៨០ គ.ម/ម៉ោង):</b> គ្មានសំឡេង "ហ៉ឺៗ" ឬ "ង៉ឺៗ" ដែលបញ្ជាំក់ថាប្រដាប់កាន់កង់ (Wheel Bearings) សឹក។</label></div>
+    <div class="item"><input type="checkbox" id="c34" onchange="updateProgress()"><label for="c34"><b>ជើងទប់ម៉ូទ័រ (Motor Mounts):</b> គ្មានសំឡេង "កុក" ខ្លាំង ពេលជាន់ ឬលែងហ្គែរភ្លាមៗ។</label></div>
+
+    <h2>ផ្នែកទី ៨៖ ការផ្ទៀងផ្ទាត់ឯកសារផ្លូវការ MPWT (Official Vehicle Documents)</h2>
+    <div class="item highlight"><input type="checkbox" id="c35" onchange="updateProgress()"><label for="c35"><b>ស្កេន QR Code ប័ណ្ណសម្គាល់យានយន្ត (MPWT QR Code Scan):</b> ប្រើកាមេរ៉ាទូរស័ព្ទស្កេន QR Code លើកាតគ្រី។ លទ្ធផលត្រូវបង្ហាញលើ Domain ផ្លូវការរបស់ក្រសួងលោក <b>ts.mpwt.gov.kh</b> ឬ <b>vehicle.mpwt.gov.kh</b> ប៉ុណ្ណោះ។</label></div>
+    <div class="item highlight"><input type="checkbox" id="c36" onchange="updateProgress()"><label for="c36"><b>ការផ្ទៀងផ្ទាត់ទិន្នន័យលើ QR Code (Data Matching):</b> លេខតួ (VIN), លេខម៉ូទ័រ, ពណ៌, ផលិតផល (TOYOTA bZ3X) និងឈ្មោះម្ចាស់ដើម ត្រូវតែត្រូវគ្នានឹងកាតគ្រី ១០០%។</label></div>
+    <div class="item"><input type="checkbox" id="c37" onchange="updateProgress()"><label for="c37"><b>ស្លាកលេខ និង QR Code ស្លាកលេខ (License Plate QR Check):</b> ស្លាកលេខមានបោះពុម្ពឡូហ្គោ MPWT ត្រឹមត្រូវ ហើយ QR Code លើស្លាកលេខអាចស្កេនចូលប្រព័ន្ធផ្លូវការរបស់ MPWT បាន។</label></div>
+    <div class="item"><input type="checkbox" id="c38" onchange="updateProgress()"><label for="c38"><b>លិខិតឆៀករថយន្ត (Technical Inspection Certificate):</b> មានលិខិតឆៀកផ្លូវការ និងស្ទីកគ័រឆៀកបិទលើកញ្ចក់មុខមិនទាន់ផុតកំណត់។</label></div>
+    <div class="item"><input type="checkbox" id="c39" onchange="updateProgress()"><label for="c39"><b>ពន្ធផ្លូវ និងស្ទីកគ័រពន្ធ (Road Tax Stamp & Receipt):</b> មានបង្កាន់ដៃបង់ពន្ធផ្លូវឆ្នាំចុងក្រោយពីអគ្គនាយកដ្ឋានពន្ធដារ (GDT)។</label></div>
+    <div class="item"><input type="checkbox" id="c40" onchange="updateProgress()"><label for="c40"><b>ក្រដាសពន្ធនាំចូល (Customs Import Receipt / CCC):</b> ប្រសិនជារថយន្តក្រដាសពន្ធ ត្រូវមានលិខិតបញ្ជាក់បង់ពន្ធគយដើម និង CCC Certificate បង្ហាញ VIN ត្រូវគ្នា។</label></div>
+    <div class="item"><input type="checkbox" id="c41" onchange="updateProgress()"><label for="c41"><b>កិច្ចសន្យាទិញលក់ / ការផ្ទេរកម្មសិទ្ធិ (Transfer Contract):</b> មានកិច្ចសន្យាទិញលក់បិទផ្ដិតមេដៃ និងឯកសារអត្តសញ្ញាណប័ណ្ណម្ចាស់ដើមត្រឹមត្រូវ។</label></div>
+
+    <script>
+        function updateProgress() {
+            const total = document.querySelectorAll('input[type="checkbox"]').length;
+            const checked = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            document.getElementById('progress').innerText = `Checked: ${checked} / ${total} Items`;
+        }
+    </script>
+</body>
+</html>
